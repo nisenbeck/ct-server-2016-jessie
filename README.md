@@ -4,7 +4,7 @@ Die Zeitschrift c't hat in Ausgabe 08/2016 (ab Seite 100) unter dem Titel "Wüns
 Bauvorschlag für einen lüfterlosen und sparsamen Heim-Server" einen Bauvorschlag für einen super sparsamen Heimserver auf Skylake Basis veröffentlicht.
 
 Dieser **Artikel** kann [hier](http://heise.de/-3151451) als PDF erworben werden.<br>
-Eine aktualisierte **Teileliste** zum Nachbau habe ich bei bei [geizhals.de](http://geizhals.de/?cat=WL-718937) veröffentlicht.
+Eine **aktualisierte Teileliste** zum Nachbau habe ich bei bei [geizhals.de](http://geizhals.de/?cat=WL-718937) veröffentlicht.
 
 ## Stromverbrauch unter Linux
 In der Einleitung heißt es:
@@ -18,8 +18,8 @@ Also los....
 
  * Die Hardware wie beschrieben (siehe Teileliste)
  * Debian 8 (Jessie)
- * ein aktueller Kernel (derzeit 4.8.x)
- * ein kleines Shellscript mit den Stromsparoptionen
+ * Ein aktueller Kernel (derzeit 4.8.x)
+ * Ein kleines Shellscript mit den Stromsparoptionen
 
 
 ##### Ergebnis: 8,1 Watt<sup>[1](#stromverbrauch)</sup> :smiley:
@@ -29,7 +29,7 @@ Also los....
 Arbeitszeit: ca. 90 Min. / Schwierigkeitsgrad: mittel
 
 1. Die Hardware gemäß Teileliste kaufen und zusammenbauen.
-2. Debian 8 herunterladen und installieren.<br>**Tipp:** Die inofizielle Firmware ISO verwenden, damit das Netzwerk direkt bei der Installation funktioniert. [Download](http://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/8.6.0+nonfree/amd64/iso-cd/)
+2. Debian 8 herunterladen und installieren.<br>**Tipp:** Die inofizielle [Firmware ISO](http://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/8.6.0+nonfree/amd64/iso-cd/) verwenden, damit das Netzwerk direkt bei der Installation funktioniert.
 3. Kernel 4.8.x installieren:
 ```bash
 wget https://github.com/Bananian/ct-server-2016-jessie/raw/master/deb/linux-image-4.8.4-skylake_4.8.4-1_amd64.deb
@@ -39,4 +39,4 @@ dpkg -i linux-image-4.8.4-skylake_4.8.4-1_amd64.deb
 5. Neustart
 
 ---
-<a name="stromverbrauch">1</a>: Stromverbrauch gemessen im Idle, beide Festplatten im Standby, die SSD in Betrieb. Gemessen mit Brennenstuhl Primera-Line PM 231 E.
+<a name="stromverbrauch">1</a>: Stromverbrauch im Idle, beide Festplatten im Standby, die SSD in Betrieb. Gemessen mit Brennenstuhl Primera-Line PM 231 E.
