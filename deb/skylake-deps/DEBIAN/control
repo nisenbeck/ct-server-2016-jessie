@@ -1,0 +1,9 @@
+Package: skylake-deps
+Version: 1.0-1
+Architecture: amd64
+Maintainer: Nico Isenbeck <contact@bananian.org>
+Installed-Size: 1
+Section: kernel
+Priority: optional
+Depends: irqbalance, cpufrequtils, intel-microcode, haveged, hdparm, smartmontools, lm-sensors, screen, ntp, zsh, htop, bwm-ng, ethtool, firmware-realtek
+Description: Recommended tools

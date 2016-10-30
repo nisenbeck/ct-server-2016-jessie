@@ -1,0 +1,50 @@
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+# SATA Link Power Management
+for i in /sys/class/scsi_host/host?/link_power_management_policy;
+do echo 'min_power' > $i;
+done
+
+# Disable NMI watchdog
+echo '0' > /proc/sys/kernel/nmi_watchdog;
+
+# Runtime PM for i2c Device
+for i in /sys/bus/i2c/devices/i2c-?/device/power/control;
+do echo 'auto' > $i;
+done
+
+# Runtime PM for PCI Device
+for i in /sys/bus/pci/devices/????:??:??.?/power/control;
+do echo 'auto' > $i;
+done
+
+# Reduce disk activity by waiting up to 10 minutes before doing writes
+echo '90' >   /proc/sys/vm/dirty_ratio;
+echo '1' >    /proc/sys/vm/dirty_background_ratio;
+echo '1500' > /proc/sys/vm/dirty_writeback_centisecs;
+
+# disable WOL
+if [ -f /sbin/ethtool ];
+then
+	for i in $(ip link list | awk -F':\ ' '/eth[0-9]/ {print $2}');
+	do ethtool -s $i wol d;
+	done
+fi
+
+# ASPM powersave - Forcing on ASPM can cause a freeze/panic
+# On systems that do not support it forcing on ASPM can even increase power consumption
+# To enable ASPM add 'pcie_aspm=force' to GRUB_CMDLINE_LINUX_DEFAULT in /etc/default/grub
+#echo 'powersave' > /sys/module/pcie_aspm/parameters/policy;
+
+exit 0
