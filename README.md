@@ -38,5 +38,9 @@ dpkg -i linux-image-4.8.4-skylake_4.8.4-1_amd64.deb
 4. Die "/etc/rc.local" ersetzen mit [dieser Datei](etc/rc.local)
 5. Neustart
 
+## TODO
+* Repository aufsetzen
+* hdparm Konfiguration beschreiben
+
 ---
 <a name="stromverbrauch">1</a>: Stromverbrauch im Idle, beide Festplatten im Standby, die SSD in Betrieb. Gemessen mit Brennenstuhl Primera-Line PM 231 E.
