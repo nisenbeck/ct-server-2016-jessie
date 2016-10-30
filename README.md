@@ -30,13 +30,13 @@ Arbeitszeit: ca. 90 Min. / Schwierigkeitsgrad: mittel
 
 1. Die Hardware gemäß Teileliste kaufen und zusammenbauen.
 2. Debian 8 herunterladen und installieren.<br>**Tipp:** Die inofizielle Firmware ISO verwenden, damit das Netzwerk direkt bei der Installation funktioniert. [Download](http://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/8.6.0+nonfree/amd64/iso-cd/)
-3. Kernel 4.8.x installieren
+3. Kernel 4.8.x installieren:
 ```bash
-wget https://dl.bananian.org/kernel-snapshots/linux-image-4.8.4-skylake_4.8.4-1_amd64.deb
+wget https://github.com/Bananian/ct-server-2016-jessie/raw/master/deb/linux-image-4.8.4-skylake_4.8.4-1_amd64.deb
 dpkg -i linux-image-4.8.4-skylake_4.8.4-1_amd64.deb
 ``` 
 4. Die "/etc/rc.local" ersetzen mit [dieser Datei](etc/rc.local)
 5. Neustart
 
-
+---
 <a name="stromverbrauch">1</a>: Stromverbrauch gemessen im Idle, beide Festplatten im Standby, die SSD in Betrieb. Gemessen mit Brennenstuhl Primera-Line PM 231 E.
