@@ -20,6 +20,7 @@ Also los....
  * Debian 8 (Jessie)
  * Ein aktueller Kernel (derzeit 4.8.x)
  * Ein kleines Shellscript mit den Stromsparoptionen
+ * Realtek und i915 Firmware
 
 
 ##### Ergebnis: 8,1 Watt<sup>[1](#stromverbrauch)</sup> :smiley:
@@ -36,7 +37,12 @@ wget https://github.com/Bananian/ct-server-2016-jessie/raw/master/deb/linux-imag
 dpkg -i linux-image-4.8.4-skylake_4.8.4-1_amd64.deb
 ``` 
 4. Die "/etc/rc.local" ersetzen mit [dieser Datei](etc/rc.local)
-5. Neustart
+5. Realtek und i915 Firmware installieren (Debian Backports):
+```bash
+echo "deb http://ftp.debian.org/debian jessie-backports main contrib non-free" > /etc/apt/sources.list.d/jessie-backports.list
+aptitude update && aptitude -t jessie-backports install firmware-misc-nonfree firmware-realtek
+```
+6. Neustart
 
 ## TODO
 * Repository aufsetzen
