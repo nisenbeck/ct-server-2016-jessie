@@ -29,20 +29,20 @@ Also los....
 
 Arbeitszeit: ca. 90 Min. / Schwierigkeitsgrad: mittel
 
-1. Die Hardware gemäß Teileliste kaufen und zusammenbauen.
-2. Debian 8 herunterladen und installieren.<br>**Tipp:** Die inofizielle [Firmware ISO](http://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/8.6.0+nonfree/amd64/iso-cd/) verwenden, damit das Netzwerk direkt bei der Installation funktioniert.
-3. Kernel 4.8.x installieren:
+* Die Hardware gemäß Teileliste kaufen und zusammenbauen.
+* Debian 8 herunterladen und installieren.<br>**Tipp:** Die inofizielle [Firmware ISO](http://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/8.6.0+nonfree/amd64/iso-cd/) verwenden, damit das Netzwerk direkt bei der Installation funktioniert.
+* Kernel 4.8.x installieren:
 ```bash
 wget https://github.com/Bananian/ct-server-2016-jessie/raw/master/deb/linux-image-4.8.4-skylake_4.8.4-1_amd64.deb
 dpkg -i linux-image-4.8.4-skylake_4.8.4-1_amd64.deb
 ``` 
-4. Die "/etc/rc.local" ersetzen mit [dieser Datei](etc/rc.local)
-5. Realtek und i915 Firmware installieren (Debian Backports):
+* Die "/etc/rc.local" ersetzen mit [dieser Datei](etc/rc.local)
+* Realtek und i915 Firmware installieren (Debian Backports):
 ```bash
 echo "deb http://ftp.debian.org/debian jessie-backports main contrib non-free" > /etc/apt/sources.list.d/jessie-backports.list
 aptitude update && aptitude -t jessie-backports install firmware-misc-nonfree firmware-realtek
 ```
-6. Neustart
+* Neustart
 
 ## TODO
 * Repository aufsetzen
