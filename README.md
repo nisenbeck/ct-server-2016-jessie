@@ -33,8 +33,8 @@ Arbeitszeit: ca. 90 Min. / Schwierigkeitsgrad: mittel
 * Debian 8 herunterladen und installieren.<br>**Tipp:** Die inofizielle [Firmware ISO](http://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/8.6.0+nonfree/amd64/iso-cd/) verwenden, damit das Netzwerk direkt bei der Installation funktioniert.
 * Kernel 4.8.x installieren:
 ```bash
-wget https://github.com/Bananian/ct-server-2016-jessie/raw/master/deb/linux-image-4.8.4-skylake_4.8.4-1_amd64.deb
-dpkg -i linux-image-4.8.4-skylake_4.8.4-1_amd64.deb
+wget https://github.com/Bananian/ct-server-2016-jessie/raw/master/deb/linux-image-4.8.6-skylake_4.8.6-1_amd64.deb
+dpkg -i linux-image-4.8.6-skylake_4.8.6-1_amd64.deb
 ``` 
 * Die "/etc/rc.local" ersetzen mit [dieser Datei](etc/rc.local)
 * Realtek und i915 Firmware installieren (Debian Backports):
