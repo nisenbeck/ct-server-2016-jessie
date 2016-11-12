@@ -28,6 +28,7 @@ Also los....
 ### Zubereitung:
 
 Arbeitszeit: ca. 90 Min. / Schwierigkeitsgrad: mittel
+<br>**Wichtig: Alle Befehle müssen als root ausgeführt werden!**
 
 1.) Die Hardware gemäß [Teileliste](http://geizhals.de/?cat=WL-718937) kaufen und zusammenbauen.
 
