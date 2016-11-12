@@ -52,7 +52,7 @@ aptitude update && aptitude upgrade
 aptitude -t jessie-backports install firmware-misc-nonfree firmware-realtek
 ```
 
-6.) Die "/etc/rc.local" ersetzen mit [dieser Datei](etc/rc.local)
+6.) Die "/etc/rc.local" ersetzen mit [dieser Datei](etc/rc.local):
 ```
 wget -O /etc/rc.local https://raw.githubusercontent.com/Bananian/ct-server-2016-jessie/master/etc/rc.local
 ```
@@ -63,6 +63,9 @@ shutdown -r now
 
 ## TODO
 * hdparm Konfiguration beschreiben
+
+## Anmerkungen, Verbesserungsvorschläge, Merge Requests oder Fragen?
+Immer her damit! Ich freue mich über jedes Feedback!
 
 ---
 <a name="stromverbrauch">1</a>: Stromverbrauch im Idle, beide Festplatten im Standby, die SSD in Betrieb. Gemessen mit Brennenstuhl Primera-Line PM 231 E.
