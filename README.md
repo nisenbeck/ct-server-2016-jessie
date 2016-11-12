@@ -29,23 +29,39 @@ Also los....
 
 Arbeitszeit: ca. 90 Min. / Schwierigkeitsgrad: mittel
 
-* Die Hardware gemäß Teileliste kaufen und zusammenbauen.
-* Debian 8 herunterladen und installieren.<br>**Tipp:** Die inofizielle [Firmware ISO](http://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/8.6.0+nonfree/amd64/iso-cd/) verwenden, damit das Netzwerk direkt bei der Installation funktioniert.
-* Kernel 4.8.x installieren:
+1.) Die Hardware gemäß [Teileliste](http://geizhals.de/?cat=WL-718937) kaufen und zusammenbauen.
+
+2.) [Debian 8 Firmware ISO](http://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/8.6.0+nonfree/amd64/iso-cd/) herunterladen und installieren.
+<br>Hinweis: Dank Firmware ISO funktioniert das Netzteil bereits während der Installation!
+
+3.) Repositories (Projekt und Debian Backports) hinzufügen:
 ```bash
-wget https://github.com/Bananian/ct-server-2016-jessie/raw/master/deb/linux-image-4.8.6-skylake_4.8.6-1_amd64.deb
-dpkg -i linux-image-4.8.6-skylake_4.8.6-1_amd64.deb
-``` 
-* Die "/etc/rc.local" ersetzen mit [dieser Datei](etc/rc.local)
-* Realtek und i915 Firmware installieren (Debian Backports):
-```bash
+apt-key adv --keyserver keys.gnupg.net --recv-keys 24BFF712
+
+echo "deb http://ct-server-2016-jessie.tech-network.de jessie main" > /etc/apt/sources.list.d/ct-server-2016-jessie.list
 echo "deb http://ftp.debian.org/debian jessie-backports main contrib non-free" > /etc/apt/sources.list.d/jessie-backports.list
-aptitude update && aptitude -t jessie-backports install firmware-misc-nonfree firmware-realtek
 ```
-* Neustart
+
+4.) Auf Kernel 4.8.x upgraden:
+```bash
+aptitude update && aptitude upgrade
+```
+
+5.) Realtek und i915 (Intel GPU) Firmware installieren (Debian Backports):
+```bash
+aptitude -t jessie-backports install firmware-misc-nonfree firmware-realtek
+```
+
+6.) Die "/etc/rc.local" ersetzen mit [dieser Datei](etc/rc.local)
+```
+wget -O /etc/rc.local https://raw.githubusercontent.com/Bananian/ct-server-2016-jessie/master/etc/rc.local
+```
+7.) Neustart
+```bash
+shutdown -r now
+```
 
 ## TODO
-* Repository aufsetzen
 * hdparm Konfiguration beschreiben
 
 ---
