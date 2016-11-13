@@ -20,7 +20,7 @@ Also los....
  * Debian 8 (Jessie)
  * Ein aktueller Kernel (derzeit 4.8.x)
  * Ein kleines Shellscript mit den Stromsparoptionen
- * Realtek und i915 Firmware
+ * Realtek Firmware
 
 
 ##### Ergebnis: 8,1 Watt<sup>[1](#stromverbrauch)</sup> :smiley:
@@ -48,9 +48,9 @@ echo "deb http://ftp.debian.org/debian jessie-backports main contrib non-free" >
 aptitude update && aptitude upgrade
 ```
 
-5.) Realtek und i915 (Intel GPU) Firmware installieren (Debian Backports):
+5.) Realtek Firmware installieren (Debian Backports):
 ```bash
-aptitude -t jessie-backports install firmware-misc-nonfree firmware-realtek
+aptitude -t jessie-backports install firmware-realtek
 ```
 
 6.) Die "/etc/rc.local" ersetzen mit [dieser Datei](etc/rc.local):
