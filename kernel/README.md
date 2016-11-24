@@ -32,7 +32,7 @@ make oldconfig
 ```
 make deb-pkg LOCALVERSION=-skylake KDEB_PKGVERSION=$(make kernelversion)-1
 ```
-Anschließend findet man im übergeordneten Verzeichnis (cd ..) die Debian Kernel Pakete (linux-image-\*.deb, linux-firmware-image-\*.deb, linux-headers-\*.deb).
+Anschließend findet man im übergeordneten Verzeichnis (```cd ..```) die Debian Kernel Pakete (linux-image-\*.deb, linux-firmware-image-\*.deb, linux-headers-\*.deb).
 
 6.) Installieren:
 ```
