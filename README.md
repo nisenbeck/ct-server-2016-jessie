@@ -5,7 +5,7 @@ Bauvorschlag für einen lüfterlosen und sparsamen Heim-Server" einen Bauvorschl
 
 Dieser **Artikel** kann [hier](http://heise.de/-3151451) als PDF erworben werden.<br>
 Eine **aktualisierte Teileliste** zum Nachbau habe ich bei bei [geizhals.de](http://geizhals.de/?cat=WL-718937) veröffentlicht.<br>
-[Gesammelte Tipps / FAQ zu D3400 und D3417](FUJITSU-D34XX-FAQ.md)
+[Gesammelte Tipps / FAQ zu D3400 und D3417](FUJITSU-D34XX-FAQ.md).
 
 ## Stromverbrauch unter Linux
 In der Einleitung heißt es:
