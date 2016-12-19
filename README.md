@@ -19,7 +19,7 @@ Also los....
 
  * Die Hardware wie beschrieben (siehe Teileliste)
  * Debian 8 (Jessie)
- * Ein aktueller Kernel (derzeit 4.8.x)
+ * Ein aktueller Kernel (derzeit 4.9.x)
  * Ein kleines Shellscript mit den Stromsparoptionen
  * Realtek Firmware
 
@@ -44,7 +44,7 @@ echo "deb http://ct-server-2016-jessie.tech-network.de jessie main" > /etc/apt/s
 echo "deb http://ftp.debian.org/debian jessie-backports main contrib non-free" > /etc/apt/sources.list.d/jessie-backports.list
 ```
 
-4.) Auf Kernel 4.8.x upgraden:
+4.) Auf Kernel 4.9.x upgraden:
 ```bash
 aptitude update && aptitude upgrade
 ```
