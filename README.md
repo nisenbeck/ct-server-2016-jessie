@@ -34,7 +34,7 @@ Arbeitszeit: ca. 90 Min. / Schwierigkeitsgrad: mittel
 1.) Die Hardware gemäß [Teileliste](http://geizhals.de/?cat=WL-718937) kaufen und zusammenbauen.
 
 2.) [Debian 8 Firmware ISO](http://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/8.6.0+nonfree/amd64/iso-cd/) herunterladen und installieren.
-<br>Hinweis: Dank Firmware ISO funktioniert das Netzteil bereits während der Installation!
+<br>Hinweis: Dank Firmware ISO funktioniert das Netzwerk bereits während der Installation!
 
 3.) Repositories (Projekt und Debian Backports) hinzufügen:
 ```bash
