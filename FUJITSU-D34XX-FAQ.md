@@ -10,10 +10,10 @@ ftp://ftp.ts.fujitsu.com/pub/Mainboard-OEM-Sales/Products/Mainboards/Industrial&
 Also quasi...
 
 **Unbuffered Non-ECC:**<br>
-http://www.heise.de/preisvergleich/?cat=ramddr3&xf=1126_Micron~1126_SK+Hynix~1126_Samsung~5828_DDR4~5830_UDIMM1~5831_DIMM
+https://www.heise.de/preisvergleich/?cat=ramddr3&xf=1126_Micron~1126_SK+Hynix~1126_Samsung~5828_DDR4~5830_UDIMM1~5831_DIMM
 
 **Unbuffered ECC:**<br>
-http://www.heise.de/preisvergleich/?cat=ramddr3&xf=1126_Micron~1126_SK+Hynix~1126_Samsung~5828_DDR4~5830_unbuffered+ECC+(UDIMM)~5831_DIMM
+https://www.heise.de/preisvergleich/?cat=ramddr3&xf=1126_Micron~1126_SK+Hynix~1126_Samsung~5828_DDR4~5830_unbuffered+ECC+(UDIMM)~5831_DIMM
 
 ## Alternative Mainboardtypen
 Es gibt diverse Varianten der Boards, die ähnlich dem lowest-End D3400 oder dem highest-End D3417 sind. Hier eine Übersicht:
@@ -41,11 +41,11 @@ Auf D3417 wird m.2 nur mit PCIe, nicht SATA unterstützt.
 
 Folgende NVMe-Module sind nun von Fujitsu auf D3417 getestet und freigegeben. Achtung, gaaaanz genau auf die Bestellbezeichnungen achten!
 
-**MZVPV128HDGM** http://www.heise.de/preisvergleich/samsung-ssd-sm951-nvme-128gb-mzvpv128hdgm-00000-a1301791.html
+**MZVPV128HDGM** https://www.heise.de/preisvergleich/samsung-ssd-sm951-nvme-128gb-mzvpv128hdgm-00000-a1301791.html
 
-**MZVPV256HDGL** http://www.heise.de/preisvergleich/samsung-ssd-sm951-nvme-256gb-mzvpv256hdgl-00000-a1257077.html
+**MZVPV256HDGL** https://www.heise.de/preisvergleich/samsung-ssd-sm951-nvme-256gb-mzvpv256hdgl-00000-a1257077.html
 
-**MZVPV512HDGL** http://www.heise.de/preisvergleich/samsung-ssd-sm951-nvme-512gb-mzvpv512hdgl-00000-a1257071.html
+**MZVPV512HDGL** https://www.heise.de/preisvergleich/samsung-ssd-sm951-nvme-512gb-mzvpv512hdgl-00000-a1257071.html
 
 Andere NVMe-Module, auch vom selben Hersteller, laufen höchst wahrscheinlich nicht zuverlässig!
 
@@ -98,7 +98,7 @@ ftp://ftp.ts.fujitsu.com/pub/Mainboard-OEM-Sales/Products/Mainboards/Industrial&
 ftp://ftp.ts.fujitsu.com/pub/Mainboard-OEM-Sales/Services/Compatibility_CPU_x_Board/Compatibility_CPUxBoard.pdf
 
 **Grafische KVM redirection über vPro/AMT im Headless-Betrieb**<br>
-Ist auf D3417 mit vPro-fähiger CPU XEON mit integrierter Grafikeinheit möglich. Achtung, seit Skylake muss dazu ein Monitor angeschlossen sein, weil sonst die Grafik komplett deaktiviert wird. Für Headless-Betrieb muss man einige Umwege machen, eine Idee dazu hier: http://www.heise.de/forum/p-28698373/ + wie man die Widerstände einsteckt hier: https://rumorscity.com/2013/12/06/how-to-create-dummy-plugs-for-your-graphics-cards/
+Ist auf D3417 mit vPro-fähiger CPU XEON mit integrierter Grafikeinheit möglich. Achtung, seit Skylake muss dazu ein Monitor angeschlossen sein, weil sonst die Grafik komplett deaktiviert wird. Für Headless-Betrieb muss man einige Umwege machen, eine Idee dazu hier: https://www.heise.de/forum/p-28698373/ + wie man die Widerstände einsteckt hier: https://rumorscity.com/2013/12/06/how-to-create-dummy-plugs-for-your-graphics-cards/
 
 **Standard Manageability**<br>
 D3417 + Nicht-XEON-CPU (außer Celeron und i7-K) = Intel Standard Manageability. Mit celeron kommt zwar immer mit CTRL-P die Meldung dass das Einstellungsmenü dafür "MEBX" aufgerufen würde, aber da Standard manageability mit Celeron nicht möglich ist kommt man nicht in das Menü.

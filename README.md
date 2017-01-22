@@ -3,8 +3,8 @@
 Die Zeitschrift c't hat in Ausgabe 08/2016 (ab Seite 100) unter dem Titel "Wünsch Dir was Supersparsames -
 Bauvorschlag für einen lüfterlosen und sparsamen Heim-Server" einen Bauvorschlag für einen super sparsamen Heimserver auf Skylake Basis veröffentlicht.
 
-Dieser **Artikel** kann [hier](http://heise.de/-3151451) als PDF erworben werden.<br>
-Eine **aktualisierte Teileliste** zum Nachbau habe ich bei bei [geizhals.de](http://geizhals.de/?cat=WL-718937) veröffentlicht.<br>
+Dieser **Artikel** kann [hier](https://heise.de/-3151451) als PDF erworben werden.<br>
+Eine **aktualisierte Teileliste** zum Nachbau habe ich bei bei [geizhals.de](https://geizhals.de/?cat=WL-718937) veröffentlicht.<br>
 [Gesammelte Tipps / FAQ zu D3400 und D3417](FUJITSU-D34XX-FAQ.md).
 
 ## Stromverbrauch unter Linux
@@ -31,7 +31,7 @@ Also los....
 Arbeitszeit: ca. 90 Min. / Schwierigkeitsgrad: mittel
 <br>**Wichtig: Alle Befehle müssen als root ausgeführt werden!**
 
-1.) Die Hardware gemäß [Teileliste](http://geizhals.de/?cat=WL-718937) kaufen und zusammenbauen.
+1.) Die Hardware gemäß [Teileliste](https://geizhals.de/?cat=WL-718937) kaufen und zusammenbauen.
 
 2.) [Debian 8 Firmware ISO](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current/amd64/iso-cd/) herunterladen und installieren.
 <br>Hinweis: Dank Firmware ISO funktioniert das Netzwerk bereits während der Installation!
