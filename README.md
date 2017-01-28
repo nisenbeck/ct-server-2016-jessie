@@ -19,7 +19,7 @@ Also los....
 
  * Die Hardware wie beschrieben (siehe Teileliste)
  * Debian 8 (Jessie)
- * Ein aktueller Kernel (derzeit 4.9.x)
+ * Ein aktueller Kernel mit longterm Support (derzeit 4.9.x)
  * Ein kleines Shellscript mit den Stromsparoptionen
  * Realtek Firmware
 
