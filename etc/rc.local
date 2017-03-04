@@ -35,9 +35,9 @@ echo '1' >    /proc/sys/vm/dirty_background_ratio;
 echo '1500' > /proc/sys/vm/dirty_writeback_centisecs;
 
 # disable WOL
-if [ -f /sbin/ethtool ];
+if [ $(which ethtool) ];
 then
-	for i in $(ip link list | awk -F':\ ' '/eth[0-9]/ {print $2}');
+	for i in $(ip -o link show | grep 'link/ether' | awk -F': ' '{print $2}');
 	do ethtool -s $i wol d;
 	done
 fi
