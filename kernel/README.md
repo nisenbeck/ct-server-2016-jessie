@@ -11,7 +11,7 @@ Der Vollständigkeit halber nachfolgend eine stichwortartige Anleitung (am Beisp
 aptitude install build-essential libssl-dev ncurses-dev libnl-3-dev libnl-genl-3-dev pkg-config libfile-fcntllock-perl
 ```
 
-2.) Sourcecode herunterladen:
+2.) Sourcecode herunterladen (https://www.kernel.org/):
 ```
 wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.9.6.tar.xz
 ```
