@@ -1,9 +1,9 @@
 Package: linux-image-amd64
-Version: 4.9.20-1
+Version: 4.9.26-1
 Architecture: amd64
 Maintainer: Nico Isenbeck <contact@bananian.org>
 Installed-Size: 1
 Section: kernel
 Priority: optional
-Depends: linux-image-4.9.20-skylake (>= 4.9.20-1)
+Depends: linux-image-4.9.26-skylake (>= 4.9.26-1)
 Description: Linux for 64-bit PCs on Skylake (meta-package)
