@@ -51,7 +51,7 @@ aptitude update && aptitude upgrade
 
 5.) Realtek Firmware installieren (Debian Backports):
 ```bash
-aptitude -t jessie-backports install firmware-realtek
+aptitude -t jessie-backports install firmware-realtek intel-microcode
 ```
 
 6.) Die "/etc/rc.local" ersetzen mit [dieser Datei](etc/rc.local):
