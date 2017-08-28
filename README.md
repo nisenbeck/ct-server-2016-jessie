@@ -3,8 +3,6 @@
 ## Achtung: Debian 9 ist da! Warum noch Debian 8 (Jessie) verwenden?
 **Wer seine Installation auf Debian 9 akualisieren möchte, findet [hier](STRETCH_UPGRADE.md) eine Anleitung.**
 
----
-
 Die Zeitschrift c't hat in Ausgabe 08/2016 (ab Seite 100) unter dem Titel "Wünsch Dir was Supersparsames -
 Bauvorschlag für einen lüfterlosen und sparsamen Heim-Server" einen Bauvorschlag für einen super sparsamen Heimserver auf Skylake Basis veröffentlicht.
 
