@@ -1,5 +1,10 @@
 # Supersparsamer Skylake Server mit Debian Jessie
 
+## Achtung: Debian 9 ist da! Warum noch Debian 8 (Jessie) verwenden?
+**Wer seine Installation auf Debian 9 akualisieren möchte, findet [hier](STRETCH_UPGRADE.md) eine Anleitung.**
+
+---
+
 Die Zeitschrift c't hat in Ausgabe 08/2016 (ab Seite 100) unter dem Titel "Wünsch Dir was Supersparsames -
 Bauvorschlag für einen lüfterlosen und sparsamen Heim-Server" einen Bauvorschlag für einen super sparsamen Heimserver auf Skylake Basis veröffentlicht.
 
@@ -33,7 +38,7 @@ Arbeitszeit: ca. 90 Min. / Schwierigkeitsgrad: mittel
 
 1.) Die Hardware gemäß [Teileliste](https://geizhals.de/?cat=WL-718937) kaufen und zusammenbauen.
 
-2.) [Debian 8 Firmware ISO](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current/amd64/iso-cd/) herunterladen und installieren.
+2.) [Debian 8 Firmware ISO](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/archive/8.9.0+nonfree/amd64/iso-cd/firmware-8.9.0-amd64-netinst.iso) herunterladen und installieren.
 <br>Hinweis: Dank Firmware ISO funktioniert das Netzwerk bereits während der Installation!
 
 3.) Repositories (Projekt und Debian Backports) hinzufügen:
